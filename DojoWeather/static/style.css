@@ -1,0 +1,138 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: sans-serif;
+}
+#nav-bar{
+    background-color: lightblue;
+    height: 100px;
+    width: 1440px;
+    display: flex;
+}
+
+h1{
+    font-size: 50px;
+    line-height: 100px;
+    width: fit-content;
+    color: white;
+    margin: 0px;
+    margin-left: 140px;
+
+}
+
+#sidenav-bar{
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 300px;
+}
+li{
+    display: flex;
+    line-height: 100px;
+    font-size: 30px;
+    color: white;
+
+}
+
+#chicago{
+    margin: 0px 40px 0px 40px;
+}
+
+#main-content{
+    height: fit-content;
+    width: 1100px;
+    margin-left: 140px;
+    margin-right: 140px;
+}
+
+#top-bar{
+    font-size: 35px;
+    height: 90px;
+    line-height: 90px;
+    border-bottom: 2px black solid;
+}
+
+.scale{
+    margin-left: 718px;
+    font-size: 20px;
+}
+
+#temp-scale{
+    height: 30px;
+    border: 2px black solid;
+}
+
+#weather{
+    height: fit-content;
+    margin-top: 40px;
+    display: flex;
+}
+
+.day{
+    background-color: lightgray;
+    width: 250px;
+    height: 400px;
+    margin-right:40px;
+    font-size:40px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+#last-day{
+    margin-right: 0px;
+}
+
+
+img{
+    height: 150px;
+    border-radius: 100px 100px;
+    margin: 0px auto;
+}
+
+p{
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+.temp{
+    font-size: 30px;
+    color: red;
+}
+
+.low{
+    color: blue;
+    margin-left: 50px;
+}
+
+#stop{
+    width: inherit;
+    height: 120px;
+    background-color: lightgray;
+    margin-top: 5px;
+    border: 3px black solid;
+    display: flex;
+    align-items: center;
+}
+
+#cookie{
+    height: 100px;
+    margin-left: 20px;
+}
+
+#content{
+    font-size: 25px;
+    width: fit-content;
+    font-weight: bold;
+}
+
+#accept{
+    width: 150px;
+    height: 30px;
+    margin-right: 30px;
+    background-color: rgb(143, 208, 230);
+    box-shadow: 3px 5px black;
+}

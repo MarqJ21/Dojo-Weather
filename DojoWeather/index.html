@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojo Weather</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <div id="nav-bar">
+        <h1>DojoWeather</h1>
+        <div id="sidenav-bar">
+            <li onclick="city(this)">
+                <ul>Burbank</ul>
+                <ul id = "chicago">Chicago</ul>
+                <ul>Dallas</ul>
+            </li>
+        </div>
+    </div>
+
+    <div id = "main-content">
+        <div id="top-bar">
+            San Jose
+            <span class = "scale">show temperature in <select name="Scale" id="temp-scale" onchange="scale(this)">
+                <option value="C">C</option>
+                <option value="F">F</option>
+            </select></span>
+        </div>
+
+        <div id="weather">
+            <div class = "day">
+                Today 
+                <img src="static/assets/some_rain.png" alt="">
+                <p>some rain</p>
+                <div class= "temp" id="today_high" >
+                    24 &#176; <span class = "low" class = today_low>18 &#176;</span> 
+                </div>
+            </div>
+            <div class = "day">
+                Tomorrow 
+                <img src="static/assets/some_sun.png" alt="">
+                <p>some sun</p>
+                <div class= temp class="tomorrow_high">
+                    27 &#176; <span class = "low" class = tomorrow_low>19 &#176;</span> 
+                </div>
+            </div>
+            <div class = "day">
+                Friday 
+                <img src="static/assets/some_clouds.png" alt="">
+                <p>some clouds</p>
+                <div class= temp class = "fri_high">
+                    21 &#176; <span class = "low" class = "fri_low">16 &#176;</span> 
+                </div>
+            </div>
+            <div class = "day" id = "last-day">
+                Saturday 
+                <img src="static/assets/some_sun.png" alt="">
+                <p>some sun</p>
+                <div class= temp class = sat_high>
+                    26 &#176; <span class = "low" class = sat_low>21 &#176;</span> 
+                </div>
+            </div>
+        </div>
+
+        <div id="stop">
+            <img id = "cookie" src="static/assets/cookie.png" alt="">
+            <div id="content">
+                Stop! Cookie time
+                <p>We use cookies (sadly not the edible ones) top personalize content and ads, to provide social media features and to analyse our traffic. <a href="#">Read More...</a></p>
+            </div>
+            <button id = "accept" onclick="accept(this)">I Accept</button>
+        </div>
+    </div>
+
+    <script src = "static/script.js"></script>
+</body>
+</html>
